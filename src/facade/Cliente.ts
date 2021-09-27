@@ -1,4 +1,4 @@
-import { Impressao3dFacade } from "./facade/Impressao3dFacade"
+import { Impressao3dFacade } from "./Impressao3dFacade";
 
 const arquivoSLT = "/* INSTRUÇÕES DE UM ARQUIVO DE IMPRESSÃO 3D */";
 
