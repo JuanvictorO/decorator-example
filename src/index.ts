@@ -1,7 +1,6 @@
-import { Impressao3dFacade } from "./facade/Impressao3dFacade"
+import { Error } from "./chain-of-responsability/Error";
+import { ErrorHandler } from "./chain-of-responsability/ErroHandler";
 
-const arquivoSLT = "/* INSTRUÇÕES DE UM ARQUIVO DE IMPRESSÃO 3D */";
+const error = new Error(401, "Erro de falha qualquer");
 
-const impressao = new Impressao3dFacade();
-
-impressao.imprimir(arquivoSLT);
+console.log(new ErrorHandler(error).handle());

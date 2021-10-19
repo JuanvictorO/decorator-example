@@ -4,11 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "chain": "ts-node ./src/chain-of-responsability",
+    "decorator": "ts-node ./src/decorator",
+    "facade": "ts-node ./src/facade",
     "build": "tsc",
-    "start": "node build/index.js",
     "dev": "ts-node-dev --ignore-watch node_modules src/index.ts"
   },
   "devDependencies": {
+    "ts-node": "^10.3.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
   }
